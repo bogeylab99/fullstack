@@ -1,0 +1,100 @@
+/* Background Overlay */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #5f6a75;
+  background-image: url(https://i.pinimg.com/736x/72/2e/e1/722ee19e6e4f9107ccf308645bd1edd0.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;  /* Light text for contrast */
+}
+
+/* Add an overlay to improve readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: -1;
+}
+
+/* Page Container */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f8f9fa;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Job List Styling */
+.job-list {
+  background: rgba(255, 255, 255, 0.1); /* Transparent white box */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Job Item */
+.job-item {
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.job-item:last-child {
+  border-bottom: none;
+}
+
+/* Buttons */
+.custom-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+}
+
+/* Links */
+a {
+  color: #00d1ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  padding: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  width: 100%;
+}
